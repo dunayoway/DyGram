@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NG+Modern:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  background: #fb8500 url(/image/background-3147808_1280.jpg);
+  background-blend-mode: difference;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  font-family: "Playwrite NG Modern", cursive;
+  flex-basis: 500px;
+  background: #fbf9ff;
+  text-align: center;
+  padding: 1em;
+  color: #000807;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 8, 7, 0.2), -2px 2px 10px rgba(0, 8, 7, 0.2);
+  transition: box-shadow ease-in-out 700ms;
+}
+
+.container:hover {
+  box-shadow: 4px 5px 10px rgba(0, 8, 7, 0.4), -4px 5px 10px rgba(0, 8, 7, 0.4);
+}
+
+.subcontainer {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 3em 0;
+  border: 2px solid #000807;
+  border-radius: 2px;
+  position: relative;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0 0.5em;
+  color: #0f1031;
+}
+
+.logo,
+.catchphrase {
+  color: #044382;
+}
+
+.catchphrase {
+  display: block;
+  font-weight: normal;
+  font-size: 0.65rem;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  width: 41%;
+  text-align: right;
+  top: -2px;
+  left: 29.5%;
+}
+
+label {
+  display: block;
+  font-size: 1.25rem;
+  text-align: left;
+  margin-bottom: 0.2em;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.9rem 0;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #a2a3bb;
+  background-color: #fbf9ff;
+  font-size: 0.7rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+}
+
+input:focus {
+  background-color: lightyellow;
+}
+
+a#fpassword {
+  display: inline-block;
+  margin-top: 0.5em;
+  font-family: "Playfair Display", serif;
+  font-size: 0.86rem;
+  color: #000807;
+  transition: letter-spacing ease-in-out 700ms;
+  position: absolute;
+  right: 0;
+}
+
+a#fpassword:hover {
+  text-decoration: none;
+  color: #550807;
+  letter-spacing: 0.4px;
+}
+
+.login-btn {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 10em;
+  padding: 0.9em 3em;
+  background: linear-gradient(to left, #000807, #9395d3);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: opacity ease-in-out 700ms;
+  margin-top: 0.1em;
+}
+
+.login-btn:hover,
+.icon-link:hover {
+  opacity: 0.75;
+}
+
+.create-account {
+  margin-top: 0.5em;
+  font-size: 0.85rem;
+  font-family: "Playfair Display", serif;
+}
+
+#signup {
+  font-size: 0.86rem;
+  color: #000807;
+  transition: text-decoration ease-in-out 700ms;
+}
+
+#signup:hover {
+  text-decoration: none;
+  color: #550807;
+}
+
+.row {
+  font-size: 2rem;
+  padding: 1.5rem 0 3rem;
+}
+
+.icon-link {
+  color: #000807;
+  text-decoration: none;
+  margin: 0 0.25em;
+  transition: opacity ease-in-out 700ms;
+}
+
+.icon-link > i {
+  font-size: 1.2rem;
+}
+
+.icon-link--facebook {
+  color: #4267b2;
+}
+
+.icon-link--google {
+  color: #db4437;
+}
+
+.icon-link--instagram {
+  color: #fa7e1e;
+}
+
+.footer-text {
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-basis: 90%;
+    max-width: 450px;
+  }
+  .subcontainer {
+    width: 80%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .subcontainer {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1279px) {
+  body {
+    background-size: cover;
+  }
+}
